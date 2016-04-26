@@ -1,0 +1,75 @@
+.colours {
+
+    .row {
+        margin-bottom: 20px;
+    }
+}
+
+.hexagon {
+
+    .top {
+        width: 0;
+        border-bottom-width: 15px;
+        border-bottom-style: solid;
+        border-left: 26px solid transparent;
+        border-right: 26px solid transparent;
+    }
+
+    .middle {
+        width: 52px;
+        height: 30px;
+    }
+
+    .bottom {
+        width: 0;
+        border-top-width: 15px;
+        border-top-style: solid;
+        border-left: 26px solid transparent;
+        border-right: 26px solid transparent;
+    }
+
+    &.hexagon-primary {
+
+        .top {
+            border-bottom-color: $colour-primary;
+        }
+
+        .middle {
+            background-color: $colour-primary;
+        }
+
+        .bottom {
+            border-top-color: $colour-primary;
+        }
+    }
+
+    &.hexagon-secondary {
+
+        .top {
+            border-bottom-color: #f7687c;
+        }
+
+        .middle {
+            background-color: #f7687c;
+        }
+
+        .bottom {
+            border-top-color: #f7687c;
+        }
+    }
+
+    &.hexagon-tertiary {
+
+        .top {
+            border-bottom-color: #fddc7a;
+        }
+
+        .middle {
+            background-color: #fddc7a;
+        }
+
+        .bottom {
+            border-top-color: #fddc7a;
+        }
+    }
+}

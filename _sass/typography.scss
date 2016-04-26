@@ -1,0 +1,44 @@
+* {
+    font-family: 'Montserrat Light', sans-serif;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Regular', sans-serif;
+    color: $colour-primary;
+}
+
+.font-demo {
+
+    .montserrat-black {
+        font-family: 'Montserrat Black';
+    }
+
+    .montserrat-bold {
+        font-family: 'Montserrat Bold';
+    }
+
+    .montserrat-extra-bold {
+        font-family: 'Montserrat Extra Bold';
+    }
+
+    .montserrat-hairline {
+        font-family: 'Montserrat Hairline';
+    }
+
+    .montserrat-light {
+        font-family: 'Montserrat Light';
+    }
+
+    .montserrat-regular {
+        font-family: 'Montserrat Regular';
+    }
+
+    .montserrat-semi-bold {
+        font-family: 'Montserrat Semi Bold';
+    }
+
+    .montserrat-ultra-light {
+        font-family: 'Montserrat Ultra Light';
+    }
+}
