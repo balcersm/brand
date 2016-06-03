@@ -3,12 +3,18 @@
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat Regular', sans-serif;
+h1 {
+    font-family: 'Montserrat Extra Bold', sans-serif;
+    color: $colour-primary;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat Semi Bold', sans-serif;
     color: $colour-primary;
 }
 
 .font-demo {
+    font-size: 1.5em;
 
     .montserrat-black {
         font-family: 'Montserrat Black';
