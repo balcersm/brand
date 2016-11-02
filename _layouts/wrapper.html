@@ -9,8 +9,7 @@
 
         <title>On2 Media Brand Assets &amp; Guidelines</title>
 
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/styles.css" rel="stylesheet">
+        <link href="{{ site.baseurl }}/styles.css" rel="stylesheet">
 
         <!--[if lt IE 9]>
             <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -22,11 +21,28 @@
     <body data-spy="scroll" data-target="#nav">
 
         <div class="container">
+            <div class="row hero">
+                <div class="col-sm-3">
+                    <div id="brand" class="hidden-xs hidden-sm" data-spy="affix">
+                        <a href="#">
+                            <img src="{{ site.baseurl }}/assets/brand/On2Media-logo-lightbg.png" alt="On2 Media" class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <a href="#">
+                            <img src="{{ site.baseurl }}/assets/brand/On2Media-logo-lightbg.png" alt="On2 Media" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div>
+                        <h1>Brand Assets &amp; Guidelines</h1>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-3">
-                    <nav id="nav" class="affix">
-                        <img src="/assets/brand/On2Media-logo-lightbg.png" width="232" height="100" alt="On2 Media">
-                        <hr>
+                <div class="col-md-3 hidden-xs hidden-sm">
+                    <nav id="nav" data-spy="affix" data-offset-top="0" data-offset-bottom="130">
                         <ul class="nav nav-pills nav-stacked">
                             <li role="presentation"><a href="#logo">Logo</a></li>
                             <li role="presentation"><a href="#brandmark">Brandmark</a></li>
@@ -41,6 +57,12 @@
                 </div>
                 <div class="col-md-9">
                     {{ content }}
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="col-xs-12">
+                    <hr>
+                    &copy;2016, <a href="https://on2media.com">On2 Media</a> Ltd.
                 </div>
             </div>
         </div>

@@ -1,0 +1,62 @@
+body {
+    margin: 0 50px 50px 50px;
+
+    @media (max-width: 767px) {
+        margin: 15px 0;
+    }
+}
+
+.hero > div > div {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+        padding-bottom: 20px;
+
+        &.visible-xs-block {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 138px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        height: 162px;
+    }
+
+    @media (min-width: 1200px) {
+        height: 183px;
+    }
+}
+
+#brand {
+    background: #fff;
+    z-index: 1;
+}
+
+#brand, #nav {
+
+    &.affix, &.affix-bottom {
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            width: 212.5px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 262.5px;
+        }
+    }
+
+    &.affix-bottom {
+        position: absolute;
+    }
+}
+
+.copyright {
+    height: 50px;
+}

@@ -4,13 +4,36 @@
 }
 
 h1 {
+    margin: 0;
+    line-height: 1;
     font-family: 'Montserrat Extra Bold', sans-serif;
     color: $colour-primary;
+
+    @media (max-width: 767px) {
+        padding-top: 0;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-top: 27px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        padding-top: 45px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 61px;
+    }
 }
 
 h2, h3, h4, h5, h6 {
+    margin: 40px 0 20px 0;
     font-family: 'Montserrat Semi Bold', sans-serif;
     color: $colour-primary;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .font-demo {
